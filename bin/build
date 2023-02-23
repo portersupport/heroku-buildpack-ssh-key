@@ -12,8 +12,7 @@ BUILD_DIR=$1
 VENDOR_DIR="$BUILD_DIR/vendor"
 ENV_DIR=$3
 
-echo $3
-ls $ENV_DIR
+echo $BUILDPACK_SSH_KEY
 
 # adapted from SectorLabs/heroku-buildpack-git-submodule
 BUILDPACK_SSH_KEY=$(<"$ENV_DIR/BUILDPACK_SSH_KEY")
